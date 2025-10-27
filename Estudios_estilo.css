@@ -1,0 +1,71 @@
+body{
+    background-image: url("vintageFondo.jpg");
+    background-size: cover;
+    font-family: garamond;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+.contenedor {
+      background-color: #968470c9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contenedor img {
+      width: 260px;
+      height: 300px;
+      border: 2px solid rgba(128, 128, 128, 0);
+      border-radius: 5px;
+    }
+
+    .texto {
+      max-width: 400px;
+      text-align: justify;
+    }
+nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ADD8E6;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: #2c515e;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}

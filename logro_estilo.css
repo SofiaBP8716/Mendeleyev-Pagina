@@ -1,0 +1,103 @@
+body{
+    background-image: url("vintageFondo.jpg");
+    background-size: cover;
+    font-family: garamond;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ADD8E6;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: #2c515e;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.contenedor {
+      background-color: #968470c9;
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px; 
+    }
+    .bloque {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 20px;
+    }
+
+      .bloque.invertido {
+      flex-direction: row-reverse;
+    }
+
+    .bloque img {
+      width: 290px;
+      height: 200px;
+      border: 2px solid rgba(128, 128, 128, 0);
+      border-radius: 10px;
+    }
+
+    .texto {
+      flex: 1;
+    }
+
+    .texto h3 {
+      margin: 0 0 5px 0;
+    }
+
+    .texto p {
+      margin: 0;
+    }
+
+     @media (max-width: 700px) {
+      .bloque, .bloque.invertido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .bloque img {
+        margin-bottom: 10px;
+      }
+    }
+    h3, p {
+      font-size: 30px;
+    }

@@ -1,0 +1,59 @@
+body{
+    background-image: url("vintageFondo.jpg");
+    background-size: cover;
+    font-family: garamond;
+}
+img {
+    border-radius: 100%;
+    border: 5px solid #4c899e;
+}
+h4 {
+    color: #94afb9;
+    font-size: 40px;
+    background-color:#968470;
+}
+.tituloInicio {
+    background-color:#968470;
+    color: #a9c9d4;
+    font-size: 60px;
+}
+nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ADD8E6;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: #2c515e;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
